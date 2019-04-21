@@ -60,6 +60,14 @@ body {
     top: -28px;
 
 }
+.numerals{
+    position: absolute;
+    width: 181px;
+    height: 194.08px;
+    left: 46px;
+    top: 40px;
+}
+
 .hand_cap{
     position: absolute;
     z-index: 10;
@@ -78,14 +86,13 @@ body {
     width: 171px;
     height: 171px;
     left: 54px;
-    top: 54px;
+    top: 50px;
 
 }
 .hours{
-
-    left: 53%;
+    left: 52%;
     position: absolute;
-    top: 13%;
+    top: 15%;
     transform-origin: 50% 100%;
     width: 5.97px;
     height: 71px;
@@ -96,7 +103,7 @@ body {
 
 .minutes{
     background: #050606;
-    left: 49%;
+    left: 46%;
     position: absolute;
     top: 5%;
     transform-origin: 50% 100%;
@@ -107,16 +114,28 @@ body {
 
 .seconds {
     background: #E9343F;
-
     left: 49.5%;
     position: absolute;
-    top: 1%;
+    top: 0.9%;
     transform-origin: 50% 80%;
     width: 3px;
     height: 102px;
     z-index: 8;
 }
-
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+.hours-container {
+    animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+    animation: rotate 3600s infinite steps(60);
+}
+.seconds-container {
+    animation: rotate 60s infinite steps(60);
+}
 
 
 
@@ -137,7 +156,7 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 189.45px;
+    left: 188px;
     top: 41.79px;
     transform: rotate(30deg);
     background: #1A1917;
@@ -146,8 +165,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 229.71px;
-    top: 80.95px;
+    left: 229px;
+    top: 79px;
     transform: rotate(60deg);
     background: #1A1917;
 }
@@ -155,8 +174,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 245px;
-    top: 130px;
+    left: 244px;
+    top: 131px;
     transform: rotate(90deg);
     background: #1A1917;
 }
@@ -164,8 +183,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 231.21px;
-    top: 189.45px;
+    left: 230px;
+    top: 188px;
     transform: rotate(120deg);
     background: #1A1917;
 }
@@ -174,7 +193,7 @@ body {
     width: 3px;
     height: 12px;
     left: 192.05px;
-    top: 229.71px;
+    top: 228px;
     transform: rotate(150deg);
     background: #1A1917;
 }
@@ -182,8 +201,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 138px;
-    top: 245px;
+    left: 136px;
+    top: 243px;
     transform: rotate(0deg);
     background: #1A1917;
 }
@@ -191,8 +210,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 83.55px;
-    top: 231.21px;
+    left: 82px;
+    top: 228px;
     transform: rotate(210deg);
     background: #1A1917;
 }
@@ -200,8 +219,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 43.29px;
-    top: 192.05px;
+    left: 42px;
+    top: 187px;
     transform: rotate(240deg);
     background: #1A1917;
 }
@@ -209,8 +228,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 28px;
-    top: 138px;
+    left: 29px;
+    top: 133px;
     transform: rotate(270deg);
     background: #1A1917;
 }
@@ -218,8 +237,8 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 41.79px;
-    top: 83.55px;
+    left: 44px;
+    top: 81px;
     transform: rotate(300deg);
     background: #1A1917;
 }
@@ -227,11 +246,151 @@ body {
     position: absolute;
     width: 3px;
     height: 12px;
-    left: 80.95px;
-    top: 43.29px;
+    left: 84px;
+    top: 42px;
     transform: rotate(330deg);
     background: #1A1917;
 }
+
+.n12{
+    position: absolute;
+    left: 83px;
+    top: 0;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #0E0E0C;
+}
+.n1{
+    position: absolute;
+    left: 132px;
+    top: 13px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #0E0E0C;
+}
+.n2{
+    position: absolute;
+    left: 168px;
+    top: 47px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #0E0E0C;
+}
+.n3{
+    position: absolute;
+    left: 181px;
+    top: 85px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #0E0E0C;
+}
+.n4{
+    position: absolute;
+    left: 168px;
+    top: 137px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #0E0E0C;
+}
+.n5{
+    position: absolute;
+    left: 132px;
+    top: 169px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #0E0E0C;
+}
+.n6{
+    position: absolute;
+    left: 88px;
+    top: 181px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #0E0E0C;
+}
+.n7{
+    position: absolute;
+    left: 45px;
+    top: 169px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #0E0E0C;
+}
+.n8{
+    position: absolute;
+    left: 7px;
+    top: 137px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #0E0E0C;
+}
+.n9{
+    position: absolute;
+    left: -5px;
+    top: 85px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #0E0E0C;
+}
+.n10{
+    position: absolute;
+    left: 5px;
+    top: 43px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #0E0E0C;
+}
+.n11{
+    position: absolute;
+    left: 32px;
+    top: 13px;
+    z-index: 4;
+    font-family: "HelveticaNeue";
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #0E0E0C;
+}
+
 
 .h1m1{
     position: absolute;
